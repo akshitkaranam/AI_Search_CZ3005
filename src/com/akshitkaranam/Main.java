@@ -4,6 +4,8 @@ import com.akshitkaranam.Utilities.Graph;
 import com.akshitkaranam.Utilities.Path;
 
 import static com.akshitkaranam.Tasks.Misc.initialiseGraph;
+import static com.akshitkaranam.Tasks.Task1.ucsUnrestricted;
+
 import static com.akshitkaranam.Tasks.Task2.ucsRestricted;
 import static com.akshitkaranam.Tasks.Task3.aStar;
 
@@ -15,7 +17,7 @@ public class Main {
         Graph graph = initialiseGraph();
 
         System.out.println("Task 1: ");
-        Path task1 = ucsRestricted(graph, 1, 50);
+        Path task1 = ucsUnrestricted(graph, 1, 50);
         System.out.println(task1);
         System.out.println();
 

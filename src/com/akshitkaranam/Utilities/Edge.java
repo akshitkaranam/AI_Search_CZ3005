@@ -31,25 +31,6 @@ public class Edge {
         this.cost = cost;
     }
 
-    public Node getCurrentNode(int nodeNumber) {
-        if (nodeNumber == connectingNode1.getNodeNumber()) {
-            return connectingNode1;
-        } else if (nodeNumber == connectingNode2.getNodeNumber()) {
-            return connectingNode1;
-        } else {
-            return null;
-        }
-
-
-    }
-
-    public Node getNeighbour(int nodeNumber) {
-        if (nodeNumber == connectingNode1.getNodeNumber()) {
-            return connectingNode2;
-        }
-        return connectingNode1;
-    }
-
 
     @Override
     public String toString() {

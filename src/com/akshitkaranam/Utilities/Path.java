@@ -42,6 +42,8 @@ public class Path {
         return distance;
     }
 
+
+
     public double getScore() {
         return score;
     }
@@ -65,7 +67,7 @@ public class Path {
             if (pathNodes.get(pathNodes.size() - 1) == node) {
                 stringToPrint.append(node.getNodeNumber());
             } else {
-                stringToPrint.append(node.getNodeNumber()).append("->");
+                stringToPrint.append(node.getNodeNumber()).append(" -> ");
             }
         }
         stringToPrint.append("\n");
